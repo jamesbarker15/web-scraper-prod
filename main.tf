@@ -8,7 +8,7 @@ resource "aws_key_pair" "deployer" {
 }
 
 resource "aws_instance" "ec2" {
-    ami = "ami-0fb2f0b847d44d4f0"
+    ami = "ami-01dd271720c1ba44f"
     instance_type = "t2.micro"
     key_name = "ssh-jenkins"
     user_data = file("./script.sh")
