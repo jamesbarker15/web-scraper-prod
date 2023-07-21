@@ -56,9 +56,10 @@ if __name__ == "__main__":
         item = extracted.split("£")
         item.append(timestamp)
         stored = store(item)
-        print("No Change")
-        time.sleep(60)
-        if item[1] < "175.00":
+        if item[1] < "176.00":
             send_email("Price has dropped!")
             print(item)
-            time.sleep(60)
+            time.sleep(5)
+        else:
+            print("No Change")
+            time.sleep(5)
