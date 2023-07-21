@@ -10,6 +10,5 @@ git clone https://github.com/jamesbarker15/web-scraper-prod.git
 cd /home/ubuntu/webscraper/web-scraper-prod
 sudo NEEDRESTART_MODE=a apt install python3-pip -y
 sudo pip install -r requirements.txt
-sh export PASSWORD="zzvjdmwywnuzfyyi"
-python3 main.py
+
 
