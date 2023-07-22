@@ -4,7 +4,6 @@ import sqlite3
 import time
 import datetime
 import smtplib, ssl
-import os
 
 URL = "https://www.jdsports.co.uk/product/black-nike-max-95-ultra/19576123/"
 HEADERS = {"User-Agent":'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 '
@@ -38,7 +37,7 @@ def send_email(message):
     port = 465
 
     username = "james.barker132@gmail.com"
-    password = os.getenv("PASSWORD")
+    password = "zzvjdmwywnuzfyyi"
 
     receiver = "james.barker132@gmail.com"
     context = ssl.create_default_context()
