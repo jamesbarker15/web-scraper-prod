@@ -36,8 +36,8 @@ def send_email(message):
     host = "smtp.gmail.com"
     port = 465
 
-    username = "james.barker132@gmail.com"
-    password = "zzvjdmwywnuzfyyi"
+    username = "webscraper132@gmail.com"
+    password = "qeduivdbbqmvllrw"
 
     receiver = "james.barker132@gmail.com"
     context = ssl.create_default_context()
@@ -55,10 +55,10 @@ if __name__ == "__main__":
         item = extracted.split("£")
         item.append(timestamp)
         stored = store(item)
-        if item[1] < "176.00":
+        if item[1] < "175.00":
             send_email("Price has dropped!")
             print(item)
-            time.sleep(5)
+            time.sleep(60)
         else:
             print("No Change")
-            time.sleep(5)
+            time.sleep(60)
