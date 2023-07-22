@@ -8,6 +8,7 @@ mkdir /home/ubuntu/webscraper
 cd /home/ubuntu/webscraper
 git clone https://github.com/jamesbarker15/web-scraper-prod.git
 sudo chmod +x /home/ubuntu/webscraper/web-scraper-prod/run.sh
+sudo ./home/ubuntu/webscraper/web-scraper-prod/run.sh
 #sudo NEEDRESTART_MODE=a apt install python3-pip -y
 #sudo pip install -r requirements.txt
 
