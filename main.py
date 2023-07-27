@@ -4,7 +4,8 @@ import sqlite3
 import time
 import datetime
 import smtplib, ssl
-
+import os
+#github.com/jamesbarker15
 URL = "https://www.jdsports.co.uk/product/black-nike-max-95-ultra/19576123/"
 HEADERS = {"User-Agent":'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 '
                         '(KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'}
@@ -36,10 +37,10 @@ def send_email(message):
     host = "smtp.gmail.com"
     port = 465
 
-    username = "webscraper132@gmail.com"
-    password = "qeduivdbbqmvllrw"
+    username = os.getenv("EMAIL")
+    password = os.getenv("PASSWORD")
 
-    receiver = "james.barker132@gmail.com"
+    receiver = "webscraper132@gmail.com"
     context = ssl.create_default_context()
 
     with smtplib.SMTP_SSL(host, port, context=context) as server:
